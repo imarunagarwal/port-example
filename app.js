@@ -3,13 +3,13 @@ const path = require('path')
 var app = express();
 
 
-app.use(express.static(__dirname+'/dist/port-client'));
+app.use(express.static(__dirname + '/dist/Port-Client'));
 
-app.get('/*',function(request,response){
-    response.sendFile(path.join(__dirname,'/dist/port-client/index.html'))
+app.get('/*', function (request, response) {
+    response.sendFile(path.join(__dirname + '/dist/Port-Client/index.html'))
 });
 
-app.listen(3000 || process.env.PORT,() => {
+app.listen(3000 || process.env.PORT, () => {
     console.log(`Server is listening on port `);
 });
 
