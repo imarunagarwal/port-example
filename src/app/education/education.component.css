@@ -1,0 +1,12 @@
+.educard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-link:focus {
+    text-decoration: none !important;
+    box-shadow: none;
+}
+.btn-link:hover{
+    text-decoration: none !important;
+}
